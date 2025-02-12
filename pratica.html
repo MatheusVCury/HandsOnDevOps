@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo de Pagina HTML</title>
+    <title>Exemplo de Página HTML</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f9;
             margin: 0;
             padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
         header {
             background-color: #4CAF50;
@@ -18,15 +22,27 @@
             text-align: center;
         }
         main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
             padding: 20px;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 10px;
-            position: fixed;
-            bottom: 0;
             width: 100%;
         }
         .btn {
@@ -36,7 +52,8 @@
             border: none;
             cursor: pointer;
             text-align: center;
-            display: inline-block;
+            margin-top: 15px;
+            border-radius: 5px;
         }
         .btn:hover {
             background-color: #45a049;
@@ -52,14 +69,15 @@
 <main>
     <section>
         <h2>Sobre o Projeto</h2>
-        <p>Este projeto tem como objetivo ensinar o fluxo de trabalho do GitHub, incluindo a criação de branches, commits, Pull Requests e revições de codigo.</p>
+        <p>Este projeto tem como objetivo ensinar o fluxo de trabalho do GitHub, incluindo a criação de branches, commits, Pull Requests e revisões de código.</p>
     </section>
 
     <section>
         <h2>Funcionalidades</h2>
         <ul>
-            <li>Visualização de paginas HTML simples.</li>
-            <li>Interação com formularios.</li>
+            <li>Visualização de páginas HTML simples.</li>
+            <li>Interação com formulários.</li>
+
             <li>Design simples e responsivo.</li>
         </ul>
     </section>
